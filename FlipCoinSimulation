@@ -1,4 +1,11 @@
-#!/bin/bash
+#!/bin/bash -x
 
-echo "Welcome to Flip Coin Simulation Problem"
+FLIP=$(($RANDOM%2));
+if [[ $FLIP -eq 1 ]];
+then
+	echo "HeadS"
+else
+	echo "TailS"
+fi
+
 
